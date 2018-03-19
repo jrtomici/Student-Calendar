@@ -1,0 +1,10 @@
+john;pass;teacher
+test;test;student
+admin;admin;teacher
+student;student;student
+hello;world;teacher
+bob;bob;student
+
+test2;test;teacher
+
+steve;pass;student

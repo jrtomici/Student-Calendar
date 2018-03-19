@@ -1,0 +1,31 @@
+/*!
+ * FullCalendar v2.6.0 Stylesheet
+ * Additional
+ * (c) 2015 Adam Shaw
+ */
+.fc-section-start .fc-time:before {
+    content: "\e034";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    padding-right: 5px;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fc-section-end .fc-time:before {
+    content: "\e032";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    padding-right: 5px;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

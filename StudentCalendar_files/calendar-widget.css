@@ -1,0 +1,49 @@
+.calendar-month td, .calendar-month th {
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+  width: 50px;
+  padding: 10px 0;
+  text-align: center;
+}
+.calendar-month td {
+  height: 50px;
+}
+table.calendar-month  {
+  border-right: 1px solid #999;
+  border-top: 1px solid #999;
+}
+
+.calendar-month th {
+  background: #666;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+.calendar-month td.other-month {
+  background: #eee;
+  opacity: 0.2;
+}
+
+.calendar-container {
+  float: left;
+  margin: 10px;
+}
+.current-month div {
+  position: relative;
+}
+.current-month .day{
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  font-weight: bold;
+}
+.current-month abbr {
+  font-size: 11px;
+  position: absolute;
+  top: 15px;
+  left: -7px;
+  right: -7px;
+  display: block;
+  line-height: 8px;
+}
