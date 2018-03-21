@@ -2,32 +2,46 @@
 =====
 
 A Web Application for Teachers and Students
+
 by John Tomici
+
 A Capstone Project Submitted to Ankur Agrawal, PhD
+
 Manhattan College
+
 May 2017
+
 © Copyright 2017 by John Tomici All Rights Reserved
 
 ### Abstract
-The abstract is a concise summary of the research. It should describe the purpose, importance, results, and conclusions of the research.
 The web application designed by John Costanzo and I for our senior capstone project was conceived as an easy way for teachers to keep their students on top of their schoolwork. Using a calendar as a main feature, students can see the due dates and times for specific assignments, exams, and other significant academic events. Only the teacher has the ability to add events to the calendar, as well as add assignments to the assignments page. From there, the teacher can add grades for each student for a given assignment. The teacher can also edit the course name and course code, which is required upon student registration. Students can view their grades for assignments, and all users can change their password. Student Calendar can be extremely useful for students who want to stay organized, and teachers who want their students to turn in schoolwork on time.
-Keywords: calendar, assignment, web application, organization, teacher-student communication
+
+**Keywords:** calendar, assignment, web application, organization, teacher-student communication
 
 ### Acknowledgments
 I would like to thank John Costanzo for conceptualizing, designing, and developing the application alongside me, as well as the Manhattan College Computer Science department for supplying us with a Turing server to host our web pages and process our PHP code for public access. I would also like to thank Dr. Ankur Agrawal for approving our concept and checking our progress regularly with input.
 
 ## Introduction
 Student Calendar is a web application created for students and teachers to stay on the same page regarding upcoming events and due dates. Using HTML, CSS, JavaScript, PHP, and Bootstrap (a front-end framework for easy web design), we designed an interface that allows this type of communication and organization. Manhattan College’s Turing server was used to host and process the PHP code, and Apache web server was used for local testing via XAMPP. The site can be accessed by all through John Costanzo’s public HTML directory on the Turing server. Ideally, an application like this would utilize a relation database to store information, such as a MySQL database hosted by Amazon Web Services (RDS). However, due to time constraints, we simply used text files to keep user data. PHP was used to parse the files and fetch data/store values.
+
 **Requirements Specification**
-Functional requirements:
+*Functional requirements:*
+
 1. When a user registers an account, the entry for “course code” must match the current code found in the relevant file.
+
 2. Files containing user data should be up to date and updated immediately.
+
 3. User sessions should expire after 60 seconds to ensure that unauthorized users cannot
 hijack the accounts of students and teachers.
+
 4. The interface should always be up to date and display the proper data.
-Non-functional requirements:
+
+*Non-functional requirements:*
+
 1. Backup data should be available at all times in case of system failure.
+
 2. Web pages should open within 3 seconds.
+
 3. The account type (teacher or student) should be stored as a session variable to ensure that
 students do not have access to functionalities designed strictly for teachers.
 
@@ -36,6 +50,7 @@ One of the main inspirations to create this application was to make it user-frie
 
 ## Implementation
 Once we familiarized ourselves with the Bootstrap framework we began coding. John Costanzo worked mostly on the calendar and familiarized himself with JavaScript and various libraries such as jQuery for handling the on-click events. For the other features, including user authentication, adding, grading, and viewing assignments, and the forum were coded in HTML and PHP using the TextWrangler editor for macOS. PHP was needed for fetching form data via post method, keeping user sessions, and fetching data from the relevant files. The following simple snippet of PHP code was used to manage which features would be accessed by only teachers:
+
 ```
 <?php
    if($_SESSION['sess_acct'] == "teacher"){
@@ -43,6 +58,7 @@ Once we familiarized ourselves with the Bootstrap framework we began coding. Joh
    }
 ?>
 ```
+
 Since we used text files in place of our databases, not much work was needed for back-end. Instead of connecting to a MySQL database for inserting and querying data, we just wrote to, appended, and read from text files. To only display the most recent 20 messages on the forum, each message/line in the file was put into an array and reversed. A basic for loop was used to then only display 20 messages.
 
 ## Testing and Debugging
@@ -72,6 +88,7 @@ Overall, I am proud of this project. I learned a lot about web development, team
 
 ## References
 Bootstrap: http://getbootstrap.com/
+
 TextWrangler: http://www.barebones.com/products/textwrangler/
+
 jQuery: https://jquery.com/
-   
