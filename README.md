@@ -25,6 +25,7 @@ I would like to thank John Costanzo for conceptualizing, designing, and developi
 Student Calendar is a web application created for students and teachers to stay on the same page regarding upcoming events and due dates. Using HTML, CSS, JavaScript, PHP, and Bootstrap (a front-end framework for easy web design), we designed an interface that allows this type of communication and organization. Manhattan College’s Turing server was used to host and process the PHP code, and Apache web server was used for local testing via XAMPP. The site can be accessed by all through John Costanzo’s public HTML directory on the Turing server. Ideally, an application like this would utilize a relation database to store information, such as a MySQL database hosted by Amazon Web Services (RDS). However, due to time constraints, we simply used text files to keep user data. PHP was used to parse the files and fetch data/store values.
 
 **Requirements Specification**
+
 *Functional requirements:*
 
 1. When a user registers an account, the entry for “course code” must match the current code found in the relevant file.
